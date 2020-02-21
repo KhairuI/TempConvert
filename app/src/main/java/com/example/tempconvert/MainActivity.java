@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private ListView listView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentId,new CelsiusFragment()).commit();
+
     }
 
     @Override

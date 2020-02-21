@@ -15,6 +15,9 @@
 
         <ListView
             android:id="@+id/listViewId"
+            android:listSelector="#D8AF84"
+            android:divider="@color/colorPrimary"
+            android:dividerHeight="2dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ListView>
 
@@ -25,11 +28,11 @@
         android:layout_width="0dp"
         android:layout_height="match_parent">
 
-        <fragment
+        <FrameLayout
             android:name="com.example.tempconvert.CelsiusFragment"
             android:id="@+id/fragmentId"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></fragment>
+            android:layout_height="match_parent"></FrameLayout>
 
     </LinearLayout>
 

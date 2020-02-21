@@ -8,19 +8,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
+        android:layout_gravity="center"
         android:layout_height="wrap_content">
 
 
         <EditText
             android:id="@+id/fahrenheitEditTextId"
-            android:hint="Enter Temp value "
-            android:layout_width="match_parent"
+            android:hint="Enter fahrenheit value "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="300dp"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/fahrenheitButtonId"
             android:text="Convert to Celsius"
+            android:layout_marginTop="10dp"
+            android:textSize="23dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -28,6 +34,8 @@
             android:id="@+id/fahrenheitTextId"
             android:text="No Text"
             android:textSize="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
